@@ -28,6 +28,7 @@ email = "mailto:blacksheeprobotics<at>gmail.com"
 #twitter_username = "lorem_ipsum"
 github_username =  "https://github.com/blacksheeprobotics"
 #gplus_username =  "lorem_ipsum"
+jetson_img = "../static/img/nvidia-jetson.png"
 
 # Google-analytics
 google_analytics.id = ""
