@@ -10,8 +10,9 @@
       <img src="https://upload.wikimedia.org/wikipedia/sco/2/21/Nvidia_logo.svg" height="70"/>
       <img src="https://www.beagleboard.org/app/uploads/2021/05/beagleboard-embedded.svg" height="75"/>
       <img src="{{ get_url(path='PX4_Logo_Black_RGB.svg')}}" height="50"/>
-      <img src="{{ get_url(path='amd-svgrepo-com.svg')}}" height="100"/>
-      <p>Specifics: RPi 4/5, Jetson Nano, Beaglebone Black, Beaglebone Play, and AMD Kria KR260</p>
+      <img src="{{ get_url(path='amd-svgrepo-com.svg')}}" height="100" />
+      <img src="{{ get_url(path='OMRON_Logo.svg')}}" height="50"/>
+      <p>Specifics: RPi 4/5, Jetson Nano, Beaglebone Black, Beaglebone Play, AMD Kria KR260, and Omron NX1P2-series.</p>
     </div>
     <div class="tech">
       <h2>Code</h2>
@@ -38,17 +39,21 @@
 {% macro projects() %}
 <div class="user-details">
   <h1> Featured Projects </h1>
+  <h4> 
+    Current projects that I'm busy with at work or with family. 
+  </h4>
 </div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/mountains.jpg" }}" />
+    <!-- <img alt="mountains" src="{{ config.base_url ~ "/img/mountains.jpg" }}" /> -->
+    <img alt="quails" src="{{ config.base_url ~ "/img/quail_egg.jpg" }}" />
   </div>
   <div class="contents">
     <h3> RPi-Controlled Quail Incubator </h3>
     <ul>
       <li> Featured Skills</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>The idea behind this </p>
     <a class="project-link" href="#">Check it out</a>
   </div>
 </div>
@@ -67,3 +72,38 @@
 </div>
 {% endmacro projects %}
 
+{% macro learn() %}
+<div class="user-details">
+  <h1> Learn </h1>
+  <h4>
+    Test scripts, projects and examples that I've worked on that is worth documenting and passing along to others.
+  </h4>
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    <!-- <img alt="mountains" src="{{ config.base_url ~ "/img/mountains.jpg" }}" /> -->
+    <img alt="quails" src="{{ config.base_url ~ "/img/quail_egg.jpg" }}" />
+  </div>
+  <div class="contents">
+    <h3> RPi-Controlled Quail Incubator </h3>
+    <ul>
+      <li> Featured Skills</li>
+    </ul>
+    <p>The idea behind this </p>
+    <a class="project-link" href="#">Check it out</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="mountains" src="{{ config.base_url ~ "/img/skate.jpg" }}" />
+  </div>
+  <div class="contents-right">
+    <h3> Spresense-controlled Photobioreactor </h3>
+    <ul>
+      <li> Featured Skills</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <a class="project-link" href="#">Check it out</a>
+  </div>
+</div>
+{% endmacro learn %}
